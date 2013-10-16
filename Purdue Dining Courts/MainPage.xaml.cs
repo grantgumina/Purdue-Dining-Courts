@@ -26,14 +26,21 @@ namespace Purdue_Dining_Courts
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            DateTime testTime = new DateTime(2013, 10, 10);
-            PurdueMenu earhartMenu = new PurdueMenu("Earhart", testTime);
+            // todo get the hours of operation for each dining court
+
+            //DateTime testTime = new DateTime(2013, 10, 10);
+            PurdueMenu earhartMenu = new PurdueMenu("Earhart");
+            PurdueMenu windsorMenu = new PurdueMenu("Windsor");
+            PurdueMenu hillenbrandMenu = new PurdueMenu("Hillenbrand");
+            PurdueMenu wileyMenu = new PurdueMenu("Wiley");
+            PurdueMenu fordMenu = new PurdueMenu("Ford");
 
             Dictionary<string, List<MenuItem>> dict = earhartMenu.BreakfastMenu();
             foreach (var station in dict)
             {
                 ListView stationListView = new ListView();
                 TextBlock tb = new TextBlock();
+                tb.FontSize = 24.0;
                 tb.Text = station.Key;
                 EarhartPanel.Children.Add(tb);
 

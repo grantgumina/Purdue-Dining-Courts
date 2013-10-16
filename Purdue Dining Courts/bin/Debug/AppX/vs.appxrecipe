@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.exe">
       <PackagePath>Purdue Dining Courts.exe</PackagePath>
-      <Modified>2013-10-09T04:56:58.150</Modified>
+      <Modified>2013-10-14T03:39:49.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.pdb">
       <PackagePath>Purdue Dining Courts.pdb</PackagePath>
-      <Modified>2013-10-09T04:56:58.126</Modified>
+      <Modified>2013-10-14T03:39:49.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -58,7 +58,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-10-09T04:46:22.401</Modified>
+      <Modified>2013-10-13T05:15:02.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
