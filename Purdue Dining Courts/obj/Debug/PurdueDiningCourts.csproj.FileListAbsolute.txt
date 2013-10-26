@@ -1,0 +1,27 @@
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.exe
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.pdb
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\resources.pri
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\AppxManifest.xml
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\PurdueDiningCourts.build.appxrecipe
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\App.g.i.cs
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\App.g.cs
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\MainPage.g.i.cs
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\MainPage.g.cs
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\App.xaml
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\Common\StandardStyles.xaml
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\MainPage.xaml
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\Purdue Dining Courts.exe
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\Purdue Dining Courts.pdb
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\priconfig.xml
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\layout.resfiles
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\resources.resfiles
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\pri.resfiles
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\LanguageQualifiers.txt
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\ProjectArchitectures.txt
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\priconfig.xml.intermediate
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\layout.resfiles.intermediate
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\resources.resfiles.intermediate
+C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\pri.resfiles.intermediate

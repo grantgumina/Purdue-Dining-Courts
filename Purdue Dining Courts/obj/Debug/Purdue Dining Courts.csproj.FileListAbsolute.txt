@@ -42,10 +42,6 @@ C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\Common\
 C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\MainPage.xaml
 C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\Purdue Dining Courts.exe
 C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\Purdue Dining Courts.pdb
-C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\priconfig.xml.intermediate
-C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\layout.resfiles.intermediate
-C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\resources.resfiles.intermediate
-C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\pri.resfiles.intermediate
 C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\priconfig.xml
 C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\layout.resfiles
 C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\obj\Debug\resources.resfiles

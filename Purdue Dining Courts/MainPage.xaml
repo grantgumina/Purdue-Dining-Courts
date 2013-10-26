@@ -6,35 +6,114 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    
+
     <Page.Resources>
+        <Style x:Key="AppBarStyle" TargetType="AppBar">
+            <Setter Property="Background" Value="#CFB536"/>
+        </Style>
+        <Style x:Key="BufferStyle" TargetType="ScrollViewer">
+            <Setter Property="Background" Value="#FF494949"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="VerticalScrollMode" Value="Disabled"/>
+        </Style>
         <Style x:Key="DiningCourtMenuStyle" TargetType="StackPanel">
-            <Setter Property="Width" Value="500"/>
-            <Setter Property="Margin" Value="20 0 20 0"/>
-            <Setter Property="Background" Value="Red"/>
+            <Setter Property="Margin" Value="10,10,0,10"/>
+        </Style>
+        <Style x:Key="MainTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="42"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Margin" Value="15,0,0,0"/>
+        </Style>
+        <Style x:Key="MenuTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Margin" Value="15, 10, 15, 5"/>
+        </Style>
+        <Style x:Key="MenuSubtitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Margin" Value="15, 10, 15, 5"/>
         </Style>
     </Page.Resources>
+    
+    <Page.BottomAppBar>
+        <AppBar Padding="10,0,10,0" Style="{StaticResource AppBarStyle}">
+            <Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock>Choose a Menu:</TextBlock>
+                    <ComboBox Width="150" Height="30" x:Name="menuComboBox">
+                        <ComboBoxItem x:Name="autoComboBoxItem" Tapped="autoComboBoxItem_Tapped">Auto</ComboBoxItem>
+                        <ComboBoxItem x:Name="breakfastComboBoxItem" Tapped="breakfastComboBoxItem_Tapped">Breakfast</ComboBoxItem>
+                        <ComboBoxItem x:Name="lunchComboBoxItem" Tapped="lunchComboBoxItem_Tapped">Lunch</ComboBoxItem>
+                        <ComboBoxItem x:Name="dinnerComboBoxItem" Tapped="dinnerComboBoxItem_Tapped">Dinner</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="70" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid>
-                <TextBlock x:Name="titleTxt" FontSize="42" FontFamily="Segoe UI">Purdue Dining Courts</TextBlock>
+                <TextBlock x:Name="titleTxt" Style="{StaticResource MainTitleStyle}">Purdue Dining Courts</TextBlock>
             </Grid>
         </Grid>
         <Grid Grid.Row="1">
-            <ScrollViewer HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <ScrollViewer HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto">
                 <StackPanel Orientation="Horizontal">
-                    <StackPanel x:Name="EarhartPanel" Style="{StaticResource DiningCourtMenuStyle}" Background="Aqua"></StackPanel>
-                    <StackPanel x:Name="FordPanel" Style="{StaticResource DiningCourtMenuStyle}"></StackPanel>
-                    <StackPanel x:Name="HildenbrandPanel" Style="{StaticResource DiningCourtMenuStyle}"></StackPanel>
-                    <StackPanel x:Name="WileyPanel" Style="{StaticResource DiningCourtMenuStyle}"></StackPanel>
-                    <StackPanel x:Name="WindsorPanel" Style="{StaticResource DiningCourtMenuStyle}"></StackPanel>
+                    <ScrollViewer Style="{StaticResource BufferStyle}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource MenuTitleStyle}">Earheart</TextBlock>
+                            <TextBlock x:Name="earhartSubTitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
+                            <StackPanel x:Name="EarhartPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                    <ScrollViewer Style="{StaticResource BufferStyle}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource MenuTitleStyle}">Ford</TextBlock>
+                            <TextBlock x:Name="fordSubtitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
+                            <StackPanel x:Name="FordPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                    <ScrollViewer Style="{StaticResource BufferStyle}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource MenuTitleStyle}">Hillenbrand</TextBlock>
+                            <TextBlock x:Name="hillenbrandSubtitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
+                            <StackPanel x:Name="HillenbrandPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                    <ScrollViewer Style="{StaticResource BufferStyle}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource MenuTitleStyle}">Wiley</TextBlock>
+                            <TextBlock x:Name="wileySubtitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
+                            <StackPanel x:Name="WileyPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                    <ScrollViewer Style="{StaticResource BufferStyle}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource MenuTitleStyle}">Windsor</TextBlock>
+                            <TextBlock x:Name="windsorSubtitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
+                            <StackPanel x:Name="WindsorPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
                 </StackPanel>
             </ScrollViewer>
         </Grid>
+        <Grid Grid.Row="2"></Grid>
     </Grid>
 </Page>
