@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>STINKIN-THINKIN</Machine>
+    <Machine>GRANT-SURFACE</Machine>
     <WindowsUser>grant</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>7B55659F63EF5F9FB5D20C3CD7EE0E993B315CBAD3E90CC4E05E1093E5A994BB</RegisteredManifestChecksum>
+    <PackageIdentityName>19a11802-02ba-45ee-86b8-02c658b873bc</PackageIdentityName>
+    <RegisteredManifestChecksum>B66E0EBA62A31EB5591CC5F29496790F14A2005A715D3393DC4D57FC8A922A3B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>19a11802-02ba-45ee-86b8-02c658b873bc_1.0.0.0_neutral__2sdz1sjs6ffng</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>19a11802-02ba-45ee-86b8-02c658b873bc_2sdz1sjs6ffng!App</RegisteredUserModeAppID>
     <RegisteredPackageID>19a11802-02ba-45ee-86b8-02c658b873bc</RegisteredPackageID>
@@ -13,56 +14,52 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-10-20T05:12:29.126</Modified>
+      <Modified>2013-10-27T02:32:16.801</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.exe">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.exe">
       <PackagePath>Purdue Dining Courts.exe</PackagePath>
-      <Modified>2013-10-27T02:24:10.224</Modified>
+      <Modified>2013-10-27T03:29:44.201</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.pdb">
-      <PackagePath>Purdue Dining Courts.pdb</PackagePath>
-      <Modified>2013-10-27T02:24:10.197</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-16T03:42:52.000</Modified>
+      <Modified>2013-10-12T12:26:07.443</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-16T03:42:52.000</Modified>
+      <Modified>2013-10-12T12:26:07.459</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-16T03:42:52.000</Modified>
+      <Modified>2013-10-12T12:26:07.459</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-16T03:42:52.000</Modified>
+      <Modified>2013-10-12T12:26:07.459</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\App.xaml">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\bin\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
-      <Modified>2013-10-07T02:43:56.878</Modified>
+      <Modified>2013-10-27T03:17:31.211</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
-      <Modified>2012-06-26T23:19:20.000</Modified>
+      <Modified>2013-10-27T03:18:35.254</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\MainPage.xaml">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-10-27T01:56:03.718</Modified>
+      <Modified>2013-10-27T03:11:52.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-10-18T02:57:58.254</Modified>
+      <Modified>2013-10-27T02:32:16.442</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

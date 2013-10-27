@@ -1,1 +1,1 @@
-C:\Users\grant\my_code\PurdueDiningCourts\Purdue Dining Courts\PurdueDiningCourts.csproj;neutral
+C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\PurdueDiningCourts.csproj;neutral

@@ -103,8 +103,20 @@ namespace Purdue_Dining_Courts
                     {
                         ListView stationListView = new ListView();
                         stationListView.SelectionMode = ListViewSelectionMode.None;
+                        stationListView.IsEnabled = false;
+
+                        // apply custom style to listview
+                        Style st = new Style();
+                        st.TargetType = typeof(ListView);
+                        Setter backGroundSetter = new Setter();
+                        backGroundSetter.Property = ListViewItem.BackgroundProperty;
+                        backGroundSetter.Value = new SolidColorBrush(Colors.LightBlue);
+                        st.Setters.Add(backGroundSetter);
+                        stationListView.Style = st;
+
                         TextBlock tb = new TextBlock();
                         tb.FontSize = 18.0;
+                        tb.Foreground = new SolidColorBrush(Colors.DarkRed);
                         tb.Text = station.Key;
                         panelList[i].Children.Add(tb);
 
@@ -115,7 +127,7 @@ namespace Purdue_Dining_Courts
 
                         panelList[i].Children.Add(stationListView);
                     }
-                    subTitleList[i].Text = string.Format("{0} - {1}", menuList[i].HoursOfOperation[menuList[i].ChosenMenu].startTime.ToString(), menuList[i].HoursOfOperation[menuList[i].ChosenMenu].endTime.ToString());
+                    subTitleList[i].Text = string.Format("{0}:{1} - {2}:{3}", menuList[i].HoursOfOperation[menuList[i].ChosenMenu].startTime.Hour.ToString(), menuList[i].HoursOfOperation[menuList[i].ChosenMenu].startTime.Minute.ToString(), menuList[i].HoursOfOperation[menuList[i].ChosenMenu].endTime.Hour.ToString(), menuList[i].HoursOfOperation[menuList[i].ChosenMenu].startTime.Minute.ToString());
                     panelList[i].UpdateLayout();
                 }
                 catch (NullReferenceException exception)
