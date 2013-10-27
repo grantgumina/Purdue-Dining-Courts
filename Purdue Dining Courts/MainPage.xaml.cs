@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using Purdue_Dining_Courts;
 using System.Diagnostics;
 using Windows.UI.Popups;
+using Windows.UI;
 
 namespace Purdue_Dining_Courts
 {
@@ -68,7 +69,6 @@ namespace Purdue_Dining_Courts
             }
             catch (Exception exception)
             {
-                Debug.WriteLine("msg: " + exception.Message);
                 ShowNetworkFailurePopup();
             }
         }
@@ -102,6 +102,7 @@ namespace Purdue_Dining_Courts
                     foreach (var station in dict)
                     {
                         ListView stationListView = new ListView();
+                        stationListView.SelectionMode = ListViewSelectionMode.None;
                         TextBlock tb = new TextBlock();
                         tb.FontSize = 18.0;
                         tb.Text = station.Key;
@@ -122,6 +123,7 @@ namespace Purdue_Dining_Courts
                     panelList[i].Children.Clear();
                     // handle when there's no food being served...
                     TextBlock noFoodTextBlock = new TextBlock();
+                    noFoodTextBlock.Foreground = new SolidColorBrush(Colors.Black);
                     noFoodTextBlock.Text = "Food is currently not being served at this location.";
                     noFoodTextBlock.Margin = new Thickness(15, 0, 0, 0);
                     panelList[i].Children.Add(noFoodTextBlock);

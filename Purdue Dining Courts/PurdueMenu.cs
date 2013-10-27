@@ -43,7 +43,6 @@ namespace Purdue_Dining_Courts
                 // if service is occuring right now
                 if (slot.Value.IsWithinRange(DateTime.Now))
                 {
-                    Debug.WriteLine("{0}: {1} menu - within range", diningCourt, slot.Key);
                     ChosenMenu = slot.Key;
                     return ParseMenu(slot.Key);
                 }
