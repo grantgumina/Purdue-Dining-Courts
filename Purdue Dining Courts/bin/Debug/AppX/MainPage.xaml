@@ -6,20 +6,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
     <Page.Resources>
         <Style x:Key="AppBarStyle" TargetType="AppBar">
             <Setter Property="Background" Value="#CFB536"/>
         </Style>
         <Style x:Key="BufferStyle" TargetType="ScrollViewer">
-            <Setter Property="Background" Value="#FFEEEEEE"/>
-            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="Margin" Value="10,0,10,10"/>
             <Setter Property="Width" Value="300"/>
             <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
             <Setter Property="VerticalScrollMode" Value="Disabled"/>
         </Style>
-        <Style x:Key="DiningCourtMenuStyle" TargetType="StackPanel">
-            <Setter Property="Margin" Value="10,10,0,10"/>
+        <Style x:Key="MenuBackgroundStyle" TargetType="StackPanel">
+            <Setter Property="Background" Value="#FFEEEEEE"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
         </Style>
         <Style x:Key="MainTitleStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="42"/>
@@ -31,28 +30,39 @@
         <Style x:Key="MenuTitleStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="24"/>
             <Setter Property="Foreground" Value="#FF252525"/>
-            <Setter Property="Margin" Value="15, 10, 15, 0"/>
+            <Setter Property="Margin" Value="0, 10, 0, 0"/>
         </Style>
         <Style x:Key="MenuSubtitleStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontStyle" Value="Italic"/>
             <Setter Property="Foreground" Value="#FF252525"/>
-            <Setter Property="Margin" Value="15, 5, 15, 5"/>
+            <Setter Property="Margin" Value="0, 5, 0, 5"/>
         </Style>   
         <Style x:Key="AppBarItemTitle" TargetType="TextBlock">
             <Setter Property="Foreground" Value="#FF383838"/>
             <Setter Property="FontSize" Value="14"/>
-            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="0, 25, 5, 0"/>
         </Style>
-    </Page.Resources>
-    
+    </Page.Resources>    
     <Page.BottomAppBar>
         <AppBar Padding="10,0,10,0" Style="{StaticResource AppBarStyle}">
             <Grid>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                    <TextBlock Style="{StaticResource AppBarItemTitle}">Choose a Menu:</TextBlock>
+                    <TextBlock Style="{StaticResource AppBarItemTitle}">Date:</TextBlock>
+                    <ComboBox Width="150" Height="30" Margin="0, 0, 10, 0" x:Name="dateComboBox">
+                        <ComboBoxItem x:ConnectionId='5' x:Name="autoDateComboBoxItem"                                     >Auto</ComboBoxItem>
+                        <ComboBoxItem x:ConnectionId='6' x:Name="sundayComboBoxItem"                                   >Sunday</ComboBoxItem>
+                        <ComboBoxItem x:ConnectionId='7' x:Name="mondayComboBoxItem"                                   >Monday</ComboBoxItem>
+                        <ComboBoxItem x:ConnectionId='8' x:Name="tuesdayComboBoxItem"                                    >Tuesday</ComboBoxItem>
+                        <ComboBoxItem x:ConnectionId='9' x:Name="wednesdayComboBoxItem"                                      >Wednesday</ComboBoxItem>
+                        <ComboBoxItem x:ConnectionId='10' x:Name="thursdayComboBoxItem"                                     >Thursday</ComboBoxItem>
+                        <ComboBoxItem x:ConnectionId='11' x:Name="fridayComboBoxItem"                                   >Friday</ComboBoxItem>
+                        <ComboBoxItem x:ConnectionId='12' x:Name="saturdayComboBoxItem"                                     >Saturday</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Style="{StaticResource AppBarItemTitle}">Menu:</TextBlock>
                     <ComboBox Width="150" Height="30" x:Name="menuComboBox">
                         <ComboBoxItem x:ConnectionId='1' x:Name="autoComboBoxItem"                                 >Auto</ComboBoxItem>
                         <ComboBoxItem x:ConnectionId='2' x:Name="breakfastComboBoxItem"                                      >Breakfast</ComboBoxItem>
@@ -76,12 +86,12 @@
         </Grid>
         <Grid Grid.Row="1">
             <ScrollViewer HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto">
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Style="{StaticResource MenuBackgroundStyle}">
                     <ScrollViewer Style="{StaticResource BufferStyle}">
                         <StackPanel>
                             <TextBlock Style="{StaticResource MenuTitleStyle}">Earheart</TextBlock>
                             <TextBlock x:Name="earhartSubTitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
-                            <StackPanel x:Name="EarhartPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            <StackPanel x:Name="EarhartPanel">
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>
@@ -89,15 +99,16 @@
                         <StackPanel>
                             <TextBlock Style="{StaticResource MenuTitleStyle}">Ford</TextBlock>
                             <TextBlock x:Name="fordSubtitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
-                            <StackPanel x:Name="FordPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            <StackPanel x:Name="FordPanel">
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>
+                    <ProgressRing HorizontalAlignment="Left" Height="111" Width="172" />
                     <ScrollViewer Style="{StaticResource BufferStyle}">
                         <StackPanel>
                             <TextBlock Style="{StaticResource MenuTitleStyle}">Hillenbrand</TextBlock>
                             <TextBlock x:Name="hillenbrandSubtitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
-                            <StackPanel x:Name="HillenbrandPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            <StackPanel x:Name="HillenbrandPanel">
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>
@@ -105,7 +116,7 @@
                         <StackPanel>
                             <TextBlock Style="{StaticResource MenuTitleStyle}">Wiley</TextBlock>
                             <TextBlock x:Name="wileySubtitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
-                            <StackPanel x:Name="WileyPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            <StackPanel x:Name="WileyPanel">
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>
@@ -113,7 +124,7 @@
                         <StackPanel>
                             <TextBlock Style="{StaticResource MenuTitleStyle}">Windsor</TextBlock>
                             <TextBlock x:Name="windsorSubtitle" Style="{StaticResource MenuSubtitleStyle}"></TextBlock>
-                            <StackPanel x:Name="WindsorPanel" Style="{StaticResource DiningCourtMenuStyle}">
+                            <StackPanel x:Name="WindsorPanel">
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>

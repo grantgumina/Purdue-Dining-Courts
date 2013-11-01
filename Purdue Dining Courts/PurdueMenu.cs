@@ -69,6 +69,13 @@ namespace Purdue_Dining_Courts
             return ParseMenu("Dinner");
         }
 
+        public void ChangeDate(DateTime newDate)
+        {
+            DesiredDate = newDate;
+            SetHoursOfOperation(diningCourt, DesiredDate);
+            DownloadXML();
+        }
+
         private Dictionary<string, List<MenuItem>> ParseMenu(string menuDesired)
         {
             // Set hours of operation for desired menu

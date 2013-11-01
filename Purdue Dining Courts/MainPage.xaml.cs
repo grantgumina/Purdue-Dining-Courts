@@ -29,6 +29,7 @@ namespace Purdue_Dining_Courts
         private List<PurdueMenu> menuList;
         private List<StackPanel> panelList;
         private List<TextBlock> subTitleList;
+        private string[] menus = { "Best", "Breakfast", "Lunch", "Dinner" };
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // todo - allow user to favorite items
@@ -64,6 +65,7 @@ namespace Purdue_Dining_Courts
                 subTitleList.Add(fordSubtitle);
 
                 menuComboBox.SelectedIndex = 0;
+                dateComboBox.SelectedIndex = 0;
 
                 UpdateMenus();
             }
@@ -112,11 +114,17 @@ namespace Purdue_Dining_Courts
                         backGroundSetter.Property = ListViewItem.BackgroundProperty;
                         backGroundSetter.Value = new SolidColorBrush(Colors.LightBlue);
                         st.Setters.Add(backGroundSetter);
+
+                        Setter foregroundSetter = new Setter();
+                        foregroundSetter.Property = ListViewItem.ForegroundProperty;
+                        foregroundSetter.Value = new SolidColorBrush(Colors.Black);
+                        st.Setters.Add(foregroundSetter);
                         stationListView.Style = st;
 
                         TextBlock tb = new TextBlock();
                         tb.FontSize = 18.0;
                         tb.Foreground = new SolidColorBrush(Colors.DarkRed);
+                        tb.Margin = new Thickness(0, 10, 0, 0);
                         tb.Text = station.Key;
                         panelList[i].Children.Add(tb);
 
@@ -127,7 +135,7 @@ namespace Purdue_Dining_Courts
 
                         panelList[i].Children.Add(stationListView);
                     }
-                    subTitleList[i].Text = string.Format("{0}:{1} - {2}:{3}", menuList[i].HoursOfOperation[menuList[i].ChosenMenu].startTime.Hour.ToString(), menuList[i].HoursOfOperation[menuList[i].ChosenMenu].startTime.Minute.ToString(), menuList[i].HoursOfOperation[menuList[i].ChosenMenu].endTime.Hour.ToString(), menuList[i].HoursOfOperation[menuList[i].ChosenMenu].startTime.Minute.ToString());
+                    subTitleList[i].Text = string.Format("{0} - {1}", menuList[i].HoursOfOperation[menuList[i].ChosenMenu].startTime.ToString("hh:mm"), menuList[i].HoursOfOperation[menuList[i].ChosenMenu].endTime.ToString("hh:mm"));
                     panelList[i].UpdateLayout();
                 }
                 catch (NullReferenceException exception)
@@ -136,6 +144,9 @@ namespace Purdue_Dining_Courts
                     // handle when there's no food being served...
                     TextBlock noFoodTextBlock = new TextBlock();
                     noFoodTextBlock.Foreground = new SolidColorBrush(Colors.Black);
+                    noFoodTextBlock.FontSize = 14;
+                    noFoodTextBlock.TextWrapping = TextWrapping.Wrap;
+                    noFoodTextBlock.TextAlignment = TextAlignment.Center;
                     noFoodTextBlock.Text = "Food is currently not being served at this location.";
                     noFoodTextBlock.Margin = new Thickness(15, 0, 0, 0);
                     panelList[i].Children.Add(noFoodTextBlock);
@@ -169,6 +180,100 @@ namespace Purdue_Dining_Courts
         private void dinnerComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
         {
             UpdateMenus("Dinner");
+        }
+
+        private int DaysToAdd(DayOfWeek current, DayOfWeek desired)
+        {
+            int c = (int)current;
+            int d = (int)desired;
+            int n = (7 - c + d);
+            return (n > 7) ? n % 7 : n;
+        }
+
+        private void autoDateComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            foreach (PurdueMenu menu in menuList)
+            {
+                menu.ChangeDate(DateTime.Now);
+                UpdateMenus(menus[menuComboBox.SelectedIndex]);
+            }
+        }
+
+        private void sundayComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            foreach (PurdueMenu menu in menuList)
+            {
+                DateTime newDate = DateTime.Now;
+                newDate = newDate.AddDays(DaysToAdd(newDate.DayOfWeek, DayOfWeek.Sunday));
+                menu.ChangeDate(newDate);
+                UpdateMenus(menus[menuComboBox.SelectedIndex]);
+            }
+        }
+
+        private void mondayComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            foreach (PurdueMenu menu in menuList)
+            {
+                DateTime newDate = DateTime.Now;
+                newDate = newDate.AddDays(DaysToAdd(newDate.DayOfWeek, DayOfWeek.Monday));
+                menu.ChangeDate(newDate);
+                UpdateMenus(menus[menuComboBox.SelectedIndex]);
+            }
+        }
+
+        private void tuesdayComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            foreach (PurdueMenu menu in menuList)
+            {
+                DateTime newDate = DateTime.Now;
+                newDate = newDate.AddDays(DaysToAdd(newDate.DayOfWeek, DayOfWeek.Tuesday));
+                menu.ChangeDate(newDate);
+                UpdateMenus(menus[menuComboBox.SelectedIndex]);
+            }
+        }
+
+        private void wednesdayComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            foreach (PurdueMenu menu in menuList)
+            {
+                DateTime newDate = DateTime.Now;
+                newDate = newDate.AddDays(DaysToAdd(newDate.DayOfWeek, DayOfWeek.Wednesday));
+                menu.ChangeDate(newDate);
+                UpdateMenus(menus[menuComboBox.SelectedIndex]);
+            }
+        }
+
+        private void thursdayComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            foreach (PurdueMenu menu in menuList)
+            {
+                DateTime newDate = DateTime.Now;
+                newDate = newDate.AddDays(DaysToAdd(newDate.DayOfWeek, DayOfWeek.Thursday));
+                menu.ChangeDate(newDate);
+                UpdateMenus(menus[menuComboBox.SelectedIndex]);
+            }
+        }
+
+        private void fridayComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            foreach (PurdueMenu menu in menuList)
+            {
+                DateTime newDate = DateTime.Now;
+                newDate = newDate.AddDays(DaysToAdd(newDate.DayOfWeek, DayOfWeek.Friday));
+                menu.ChangeDate(newDate);
+                UpdateMenus(menus[menuComboBox.SelectedIndex]);
+            }
+        }
+
+        private void saturdayComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            foreach (PurdueMenu menu in menuList)
+            {
+                DateTime newDate = DateTime.Now;
+                newDate = newDate.AddDays(DaysToAdd(newDate.DayOfWeek, DayOfWeek.Saturday));
+                menu.ChangeDate(newDate);
+                UpdateMenus(menus[menuComboBox.SelectedIndex]);
+            }
         }
     }
 }
