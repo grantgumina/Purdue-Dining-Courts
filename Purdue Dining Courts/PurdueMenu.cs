@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 
 using System.Diagnostics;
+//using Windows.Data.Xml.Dom;
 
 namespace Purdue_Dining_Courts
 {
@@ -16,7 +17,6 @@ namespace Purdue_Dining_Courts
         public DateTime DesiredDate;
         private string diningCourt;
         private XDocument xDoc;
-
         public PurdueMenu(string dc, DateTime date = new DateTime())
         {
             DesiredDate = date;
@@ -34,10 +34,6 @@ namespace Purdue_Dining_Courts
         // based on the current date/time, this function returns the best menu for the user to be presented with automatically
         public Dictionary<string, List<MenuItem>> PickBestMenu()
         {
-            // should I reset the date object and redownload the XML?
-
-            // if user passes in a specific date, then it would never make sense to use this option... but I still will need to handle that scenario
-            // if DateTime.Now is within a given time frame... display the best menu
             foreach (KeyValuePair<string, TimeInterval> slot in HoursOfOperation)
             { 
                 // if service is occuring right now
@@ -47,7 +43,7 @@ namespace Purdue_Dining_Courts
                     return ParseMenu(slot.Key);
                 }
             }
-
+            
             return null;
         }
 
@@ -69,16 +65,18 @@ namespace Purdue_Dining_Courts
             return ParseMenu("Dinner");
         }
 
-        public void ChangeDate(DateTime newDate)
+        public async void ChangeDate(DateTime newDate)
         {
             DesiredDate = newDate;
             SetHoursOfOperation(diningCourt, DesiredDate);
-            DownloadXML();
+            await Task.Run(() => DownloadXML());
         }
 
         private Dictionary<string, List<MenuItem>> ParseMenu(string menuDesired)
         {
             // Set hours of operation for desired menu
+            Debug.WriteLine(xDoc.ToString());
+            Debug.WriteLine(menuDesired);
             IEnumerable<XElement> stations = xDoc.Descendants(menuDesired).Elements();
             Dictionary<string, List<MenuItem>> genericMenu = new Dictionary<string, List<MenuItem>>();
 

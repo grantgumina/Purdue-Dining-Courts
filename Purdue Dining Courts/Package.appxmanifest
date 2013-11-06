@@ -15,8 +15,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Purdue_Dining_Courts.App">
-      <VisualElements DisplayName="Purdue Dining Courts" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Purdue Dining Courts" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
+      <VisualElements DisplayName="Purdue Dining Courts" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="An unofficial app for viewing menus at Purdue's dining courts." ForegroundText="light" BackgroundColor="#FFFFFF">
+        <DefaultTile ShowName="logoOnly" WideLogo="Assets\Wide310x150Logo.png" />
         <SplashScreen Image="Assets\SplashScreen.png" />
         <InitialRotationPreference>
           <Rotation Preference="landscape" />

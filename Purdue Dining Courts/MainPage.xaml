@@ -8,7 +8,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <Style x:Key="AppBarStyle" TargetType="AppBar">
-            <Setter Property="Background" Value="#CFB536"/>
+            <Setter Property="Background" Value="#A3792C"/>
         </Style>
         <Style x:Key="BufferStyle" TargetType="ScrollViewer">
             <Setter Property="Margin" Value="10,0,10,10"/>
@@ -26,6 +26,12 @@
             <Setter Property="Foreground" Value="#CFB536"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Margin" Value="15,0,0,0"/>
+        </Style>
+        <Style x:Key="TitleProgressRingStyle" TargetType="ProgressRing">
+            <Setter Property="Width" Value="40" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Foreground" Value="#FF69B4FF" />
+            <Setter Property="Margin" Value="15,0,0,0" />
         </Style>
         <Style x:Key="MenuTitleStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="24"/>
@@ -81,11 +87,14 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid>
-                <TextBlock x:Name="titleTxt" Style="{StaticResource MainTitleStyle}">Purdue Dining Courts</TextBlock>
+                <StackPanel Orientation="Horizontal" Background="#FFD1D3D4">
+                    <TextBlock x:Name="titleTxt" Style="{StaticResource MainTitleStyle}" Foreground="#FFA3792C" FontWeight="Normal">Purdue Dining Courts</TextBlock>
+                    <ProgressRing x:Name="appProgressRing" Style="{StaticResource TitleProgressRingStyle}" />
+                </StackPanel>
             </Grid>
         </Grid>
         <Grid Grid.Row="1">
-            <ScrollViewer HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto">
+            <ScrollViewer HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" Background="#FF746C66">
                 <StackPanel Orientation="Horizontal" Style="{StaticResource MenuBackgroundStyle}">
                     <ScrollViewer Style="{StaticResource BufferStyle}">
                         <StackPanel>
@@ -103,7 +112,6 @@
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>
-                    <!-- <ProgressRing HorizontalAlignment="Left" Height="111" Width="172" /> -->
                     <ScrollViewer Style="{StaticResource BufferStyle}">
                         <StackPanel>
                             <TextBlock Style="{StaticResource MenuTitleStyle}">Hillenbrand</TextBlock>
@@ -131,6 +139,6 @@
                 </StackPanel>
             </ScrollViewer>
         </Grid>
-        <Grid Grid.Row="2"></Grid>
+        <Grid Grid.Row="2" Background="#FFD1D3D4"></Grid>
     </Grid>
 </Page>

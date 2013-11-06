@@ -23,8 +23,15 @@ namespace Purdue_Dining_Courts
 
         public MenuItem(XContainer item)
         {
-            Name = GetElementValue(item, "Name");
             IsVegetarian = bool.Parse(GetElementValue(item, "IsVegetarian"));
+            if (IsVegetarian)
+            {
+                Name = string.Format("{0} {1}", GetElementValue(item, "Name"), "(V)");
+            }
+            else
+            {
+                Name = GetElementValue(item, "Name");
+            }            
         }
     }
 }
