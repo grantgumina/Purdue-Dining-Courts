@@ -5,7 +5,7 @@
     <WindowsUser>Grant</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>19a11802-02ba-45ee-86b8-02c658b873bc</PackageIdentityName>
+    <PackageIdentityName>361393A20F51A.PurdueDiningCourts</PackageIdentityName>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\AppxManifest.xml">
@@ -16,6 +16,9 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.exe">
       <PackagePath>Purdue Dining Courts.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\LoadingLogo.png">
+      <PackagePath>Assets\LoadingLogo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -42,6 +45,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\LoadingPage.xaml">
+      <PackagePath>LoadingPage.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>

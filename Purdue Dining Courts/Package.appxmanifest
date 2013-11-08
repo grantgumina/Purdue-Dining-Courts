@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="19a11802-02ba-45ee-86b8-02c658b873bc" Publisher="CN=grant" Version="1.0.0.0" />
+  <Identity Name="361393A20F51A.PurdueDiningCourts" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.1" />
   <Properties>
     <DisplayName>Purdue Dining Courts</DisplayName>
-    <PublisherDisplayName>grant</PublisherDisplayName>
+    <PublisherDisplayName>Land of Ur Apps</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Purdue_Dining_Courts.App">
-      <VisualElements DisplayName="Purdue Dining Courts" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="An unofficial app for viewing menus at Purdue's dining courts." ForegroundText="light" BackgroundColor="#FFFFFF">
+      <VisualElements DisplayName="Purdue Dining Courts" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="An unofficial app for viewing menus at Purdue's dining courts." ForegroundText="dark" BackgroundColor="#FFFFFF">
         <DefaultTile ShowName="logoOnly" WideLogo="Assets\Wide310x150Logo.png" />
         <SplashScreen Image="Assets\SplashScreen.png" />
         <InitialRotationPreference>

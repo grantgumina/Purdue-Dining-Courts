@@ -33,52 +33,45 @@ namespace Purdue_Dining_Courts
         private List<StackPanel> panelList;
         private List<TextBlock> subTitleList;
         private string[] menus = { "Best", "Breakfast", "Lunch", "Dinner" };
-        protected override  void OnNavigatedTo(NavigationEventArgs e)
+        
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             SettingsPane.GetForCurrentView().CommandsRequested += ShowPrivacyPolicy;
 
-            // todo - non valid times for when you pick a menu (not auto)
             // todo - allow user to favorite items
             // todo - push notifications for favorites
             // todo - live tile of latest menu
-            try
-            {
-                PurdueMenu earhartMenu = new PurdueMenu("Earhart");
-                PurdueMenu windsorMenu = new PurdueMenu("Windsor");
-                PurdueMenu hillenbrandMenu = new PurdueMenu("Hillenbrand");
-                PurdueMenu wileyMenu = new PurdueMenu("Wiley");
-                PurdueMenu fordMenu = new PurdueMenu("Ford");
 
-                menuList = new List<PurdueMenu>();
-                menuList.Add(earhartMenu);
-                menuList.Add(windsorMenu);
-                menuList.Add(hillenbrandMenu);
-                menuList.Add(wileyMenu);
-                menuList.Add(fordMenu);
+            PurdueMenu[] pmArray = (PurdueMenu[])e.Parameter;
+            PurdueMenu earhartMenu = pmArray[0];
+            PurdueMenu windsorMenu = pmArray[1];
+            PurdueMenu hillenbrandMenu = pmArray[2];
+            PurdueMenu wileyMenu = pmArray[3];
+            PurdueMenu fordMenu = pmArray[4];
 
-                panelList = new List<StackPanel>();
-                panelList.Add(EarhartPanel);
-                panelList.Add(WindsorPanel);
-                panelList.Add(HillenbrandPanel);
-                panelList.Add(WileyPanel);
-                panelList.Add(FordPanel);
+            menuList = new List<PurdueMenu>();
+            menuList.Add(earhartMenu);
+            menuList.Add(windsorMenu);
+            menuList.Add(hillenbrandMenu);
+            menuList.Add(wileyMenu);
+            menuList.Add(fordMenu);
 
-                subTitleList = new List<TextBlock>();
-                subTitleList.Add(earhartSubTitle);
-                subTitleList.Add(windsorSubtitle);
-                subTitleList.Add(hillenbrandSubtitle);
-                subTitleList.Add(wileySubtitle);
-                subTitleList.Add(fordSubtitle);
+            panelList = new List<StackPanel>();
+            panelList.Add(EarhartPanel);
+            panelList.Add(WindsorPanel);
+            panelList.Add(HillenbrandPanel);
+            panelList.Add(WileyPanel);
+            panelList.Add(FordPanel);
 
-                menuComboBox.SelectedIndex = 0;
-                dateComboBox.SelectedIndex = 0;
+            subTitleList = new List<TextBlock>();
+            subTitleList.Add(earhartSubTitle);
+            subTitleList.Add(windsorSubtitle);
+            subTitleList.Add(hillenbrandSubtitle);
+            subTitleList.Add(wileySubtitle);
+            subTitleList.Add(fordSubtitle);
 
-                UpdateMenus();
-            }
-            catch (Exception exception)
-            {
-                ShowNetworkFailurePopup();
-            }
+            menuComboBox.SelectedIndex = 0;
+            dateComboBox.SelectedIndex = 0;
         }
 
         // PRIVACY POLICY
@@ -187,12 +180,6 @@ namespace Purdue_Dining_Courts
             noFoodTextBlock.Text = "Food is currently not being served at this location.";
             noFoodTextBlock.Margin = new Thickness(15, 0, 0, 0);
             panelList[i].Children.Add(noFoodTextBlock);
-        }
-
-        private async void ShowNetworkFailurePopup()
-        {
-            MessageDialog msg = new MessageDialog("Could not connect to Purdue's server. Please make sure you have a strong internet connection.", "Failure to Connect");
-            await msg.ShowAsync();
         }
 
         private void autoComboBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
@@ -307,6 +294,12 @@ namespace Purdue_Dining_Courts
                 await Task.Run(() => menu.ChangeDate(newDate));
             }
             UpdateMenus(menus[menuComboBox.SelectedIndex]);
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            UpdateMenus();
         }
     }
 }

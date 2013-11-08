@@ -54,3 +54,6 @@ C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\obj\Debug\quali
 C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\obj\Debug\qualifiers.txt.intermediate
 C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\grant\my_code\purdue-dining-courts\Purdue Dining Courts\obj\Debug\ProjectArchitectures.txt
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Debug\LoadingPage.g.i.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Debug\LoadingPage.g.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Debug\LoadingPage.xaml

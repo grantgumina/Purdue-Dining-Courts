@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Purdue_Dining_Courts.LoadingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Purdue_Dining_Courts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded">
+
+    <Grid Background="#FFFFFF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="300" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Image Source="Assets/LoadingLogo.png" />
+        </Grid>
+        <Grid Grid.Row="2">
+            <ProgressRing x:Name="downloadingRing" Width="50" Height="50" Foreground="#A3792C"/>
+        </Grid>
+    </Grid>
+</Page>

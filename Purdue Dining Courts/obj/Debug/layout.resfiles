@@ -1,3 +1,4 @@
+Assets\LoadingLogo.png
 Assets\Logo.png
 Assets\SmallLogo.png
 Assets\SplashScreen.png
@@ -5,4 +6,5 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-100.png
 App.xaml
 Common\StandardStyles.xaml
+LoadingPage.xaml
 MainPage.xaml

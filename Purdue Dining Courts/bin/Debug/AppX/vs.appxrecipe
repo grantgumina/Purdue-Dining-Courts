@@ -5,25 +5,29 @@
     <WindowsUser>Grant</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>19a11802-02ba-45ee-86b8-02c658b873bc</PackageIdentityName>
-    <RegisteredManifestChecksum>A6F386D0856D4F732ADAA01B883464BDA1BA893D10A7DFE2062E9C6D82EFD8E9</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>19a11802-02ba-45ee-86b8-02c658b873bc_1.0.0.0_neutral__2sdz1sjs6ffng</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>19a11802-02ba-45ee-86b8-02c658b873bc_2sdz1sjs6ffng!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>19a11802-02ba-45ee-86b8-02c658b873bc</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=grant</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <PackageIdentityName>361393A20F51A.PurdueDiningCourts</PackageIdentityName>
+    <RegisteredManifestChecksum>0E72BA171750D6F8A0572C2ABFBBC7CFC875A8386C84ABD637CBE488B9B168A1</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>361393A20F51A.PurdueDiningCourts_1.0.0.1_neutral__mw2fte8qa7y7m</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>361393A20F51A.PurdueDiningCourts_mw2fte8qa7y7m!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>361393A20F51A.PurdueDiningCourts</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-11-06T02:15:55.669</Modified>
+      <Modified>2013-11-08T03:55:12.847</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\Purdue Dining Courts.exe">
       <PackagePath>Purdue Dining Courts.exe</PackagePath>
-      <Modified>2013-11-06T04:14:10.862</Modified>
+      <Modified>2013-11-08T05:02:17.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\LoadingLogo.png">
+      <PackagePath>Assets\LoadingLogo.png</PackagePath>
+      <Modified>2013-11-08T04:42:07.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -58,13 +62,17 @@
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
       <Modified>2013-11-02T23:16:13.789</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\LoadingPage.xaml">
+      <PackagePath>LoadingPage.xaml</PackagePath>
+      <Modified>2013-11-08T05:02:15.624</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-11-06T02:21:22.307</Modified>
+      <Modified>2013-11-08T03:55:02.290</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-11-06T02:15:54.779</Modified>
+      <Modified>2013-11-08T03:55:12.676</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

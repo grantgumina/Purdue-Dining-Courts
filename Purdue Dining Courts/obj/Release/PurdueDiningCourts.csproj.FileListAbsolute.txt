@@ -1,0 +1,29 @@
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\Purdue Dining Courts.exe
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\Purdue Dining Courts.pdb
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\resources.pri
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\AppxManifest.xml
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\PurdueDiningCourts.build.appxrecipe
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\App.g.i.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\App.g.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\Common\StandardStyles.g.i.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\Common\StandardStyles.g.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\MainPage.g.i.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\MainPage.g.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\XamlTypeInfo.g.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\App.xaml
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\Common\StandardStyles.xaml
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\MainPage.xaml
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\Purdue Dining Courts.exe
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\Purdue Dining Courts.pdb
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\priconfig.xml
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\priconfig.xml.intermediate
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\layout.resfiles
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\layout.resfiles.intermediate
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\resources.resfiles
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\resources.resfiles.intermediate
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\pri.resfiles
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\pri.resfiles.intermediate
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\qualifiers.txt
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\qualifiers.txt.intermediate
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\ProjectArchitectures.txt
