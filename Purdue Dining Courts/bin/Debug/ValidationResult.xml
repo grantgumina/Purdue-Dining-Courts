@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT OVERALL_RESULT="FAIL" VERSION="3.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="Land of Ur Apps" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="11/7/2013 9:41:49 PM" ID="cb6bd25cf5451a7d13bcb1e5c491c7e8">
+<REPORT OVERALL_RESULT="PASS" VERSION="3.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="Land of Ur Apps" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="11/15/2013 5:01:25 PM" ID="3b98ac6f80f175f31fcb33bfb2475fc0">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
     <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
@@ -12,146 +12,134 @@
     <REQUIREMENT NUMBER="8" TITLE="Safe mode test" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
     <REQUIREMENT NUMBER="9" TITLE="Multiuser session test" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
     <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
-      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:05s.19ms">
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:07s.34ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
     <REQUIREMENT NUMBER="12" TITLE="App manifest compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
-      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:04s.59ms">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:04s.57ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
     <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
-      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.86ms">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.46ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:02s.96ms">
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:02s.94ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:04s.93ms">
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:04s.65ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
-      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:05s.08ms">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:04s.99ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications.">
-      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:04s.16ms">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:04s.13ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="60" NAME="Optimized binding references" DESCRIPTION="When using bindings, WinJS.Binding.optimizeBindingReferences should be set to true to optimize the memory usage." EXECUTIONTIME="00h:00m:07s.37ms">
+      <TEST INDEX="60" NAME="Optimized binding references" DESCRIPTION="When using bindings, WinJS.Binding.optimizeBindingReferences should be set to true to optimize the memory usage." EXECUTIONTIME="00h:00m:08s.77ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="43" NAME="Performance launch" DESCRIPTION="Application should have a responsive launch time with reasonable CPU, File IO and Memory usage" EXECUTIONTIME="00h:03m:13s.31ms">
-        <RESULT><![CDATA[FAIL]]></RESULT>
-        <MESSAGES>
-          <MESSAGE TEXT="App Launch Time: 9.287 Seconds. Launch times more than 8.0 Seconds will fail on low end systems" />
-          <MESSAGE TEXT="" />
-          <MESSAGE TEXT="Information only:" />
-          <MESSAGE TEXT="- CPU Utilization: 0.95%" />
-          <MESSAGE TEXT="- File I/O: 0.279 MB" />
-          <MESSAGE TEXT="- Process Private Memory: 0 MB" />
-          <MESSAGE TEXT="" />
-          <MESSAGE TEXT="Notes:" />
-          <MESSAGE TEXT="(1) CPU utilization of higher than 50% will significantly degrade launch performance" />
-          <MESSAGE TEXT="(2) File I/O higher than 50 MB will significantly degrade launch performance" />
-          <MESSAGE TEXT="(3) Process private memory greater than 25 MB will significantly degrade launch performance" />
-        </MESSAGES>
+      <TEST INDEX="43" NAME="Performance launch" DESCRIPTION="Application should have a responsive launch time with reasonable CPU, File IO and Memory usage" EXECUTIONTIME="00h:03m:31s.81ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
       </TEST>
-      <TEST INDEX="44" NAME="Performance suspend" DESCRIPTION="Application should have a responsive suspend with reasonable CPU and File IO usage" EXECUTIONTIME="00h:03m:00s.35ms">
+      <TEST INDEX="44" NAME="Performance suspend" DESCRIPTION="Application should have a responsive suspend with reasonable CPU and File IO usage" EXECUTIONTIME="00h:02m:39s.83ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
-      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.96ms">
+      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.74ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:09s.11ms">
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:08s.72ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
-      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:05s.21ms">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:05s.17ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
-      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:03s.17ms">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:03s.16ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="22" TITLE="Direct3D Feature Test" RATIONALE="App should use the Direct3D capability correctly.">
-      <TEST INDEX="51" NAME="Direct3D feature level support" DESCRIPTION="Applications must render content on Direct3D feature level 9.1 hardware." EXECUTIONTIME="00h:00m:25s.84ms">
+      <TEST INDEX="51" NAME="Direct3D feature level support" DESCRIPTION="Applications must render content on Direct3D feature level 9.1 hardware." EXECUTIONTIME="00h:00m:16s.92ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="71" NAME="Direct3D Trim after Suspend" DESCRIPTION="Applications must call IDXGIDevice3::Trim() on the Direct3D devices they create when handling a Suspend notification." EXECUTIONTIME="00h:00m:03s.36ms">
+      <TEST INDEX="71" NAME="Direct3D Trim after Suspend" DESCRIPTION="Applications must call IDXGIDevice3::Trim() on the Direct3D devices they create when handling a Suspend notification." EXECUTIONTIME="00h:00m:02s.95ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
-      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:04s.13ms">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:03s.49ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
-      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:03s.49ms">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:03s.74ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:01s.54ms">
+      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:01s.01ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:01s.11ms">
+      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:01s.42ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:02s.28ms">
+      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:01s.10ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:03s.20ms">
+      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:03s.91ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:02s.83ms">
+      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:02s.37ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
-      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:09s.31ms">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:08s.74ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:03s.09ms">
+      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:02s.83ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="26" TITLE="High-DPI support" RATIONALE="The application needs to set DPI-aware to make the UI look consistently good across a wide variety of high-DPI display settings." />
     <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
-      <TEST INDEX="68" NAME="WinJS background task test" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:09s.31ms">
+      <TEST INDEX="68" NAME="WinJS background task test" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:07s.00ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
@@ -159,15 +147,15 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="361393A20F51A.PurdueDiningCourts" Type="Application" Source="AppxPackage" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.1" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\361393A20F51A.PurdueDiningCourts_1.0.0.1_neutral__mw2fte8qa7y7m" PathEvidenceId="0xa" RNP="0x1" DNP="0xd" EvidenceId="0xa" Id="0000c0dc25200d6d29959c62e8798d7ace2f00000904">
+      <Program Name="361393A20F51A.PurdueDiningCourts" Type="Application" Source="AppxPackage" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.2" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\361393A20F51A.PurdueDiningCourts_1.0.0.2_neutral__mw2fte8qa7y7m" PathEvidenceId="0xa" RNP="0x1" DNP="0xd" EvidenceId="0xa" Id="0000500a15361f313711c8c8e142fcb5ccb000000904">
         <Indicators>
           <DirectoryIndicators>
-            <Directory Name="361393a20f51a.purduediningcourts_1.0.0.1_neutral__mw2fte8qa7y7m" Path="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.1_neutral__mw2fte8qa7y7m" RNP="0x9" DNP="0xb" UniqueId="0xb" Id="0000b0c65ef0995c22c1806b8932167dfc38cc00427a" />
+            <Directory Name="361393a20f51a.purduediningcourts_1.0.0.2_neutral__mw2fte8qa7y7m" Path="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.2_neutral__mw2fte8qa7y7m" RNP="0x9" DNP="0xb" UniqueId="0xb" Id="0000f61c37ff6272f14cfd316643950e612793940972" />
           </DirectoryIndicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="361393a20f51a.purduediningcourts_1.0.0.1_neutral__mw2fte8qa7y7m">
+            <PackageManifest PackageFullName="361393a20f51a.purduediningcourts_1.0.0.2_neutral__mw2fte8qa7y7m">
               <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build">
-                <Identity Name="361393A20F51A.PurdueDiningCourts" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.1" ProcessorArchitecture="neutral" />
+                <Identity Name="361393A20F51A.PurdueDiningCourts" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.2" ProcessorArchitecture="neutral" />
                 <Properties>
                   <DisplayName>Purdue Dining Courts</DisplayName>
                   <PublisherDisplayName>Land of Ur Apps</PublisherDisplayName>
@@ -201,17 +189,17 @@
           </WindowsStoreAppManifestIndicators>
         </Indicators>
         <StaticProperties>
-          <Files Id="00007865e1c3ba3baf9d97d476f4920d34f3209ed503">
-            <File Name="Purdue Dining Courts.exe" Id="000090b3fd9656a13859688830fe24436d908b9b5b7e" ProductName="Purdue Dining Courts" ProductVersion="1.0.0.0" VerLanguage="0" ShortName="PURDUE~1.EXE" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0xa400" SizeOfImage="0x10000" PeHeaderHash="0101f4d041304093aa5bbe5c0dea7064173f4cfb8b0a" PeChecksum="0x0" PeImageType="0x14c" PeSubsystem="2" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="Purdue Dining Courts" InternalName="Purdue Dining Courts.exe" LegalCopyright="Copyright ©  2013" LinkerVersion="11.0" LinkDate="11/08/2013 02:21:15" BinaryType="DOTNETIL" Created="11/08/2013 02:34:31" Modified="11/08/2013 02:34:31" OriginalFilename="Purdue Dining Courts.exe" RunLevel="AsInvoker" UiAccess="false" Path="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.1_neutral__mw2fte8qa7y7m" RNP="0x4" DNP="0x5" LowerCaseLongPath="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.1_neutral__mw2fte8qa7y7m\purdue dining courts.exe" LongPathHash="00007566e0d0e2c697b07bb436e62e288a2e0a057998" UniqueId="0xc" />
-            <File Name="resources.pri" Id="0000ebb371a8b8fa31ddba10c1a333ad0a9816ae3471" ShortName="RESOUR~1.PRI" Size="0x8b8" BinaryType="UNKNOWN" Created="11/08/2013 02:34:31" Modified="11/08/2013 02:34:31" Path="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.1_neutral__mw2fte8qa7y7m" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.1_neutral__mw2fte8qa7y7m\resources.pri" LongPathHash="000092c8cde8f33455207f887d5ba5711bb531e705ef" UniqueId="0xd" />
+          <Files Id="00009e4d87fd8608bfc04b94abe3ca15e962a5100971">
+            <File Name="resources.pri" Id="0000dceddabd4c7c0d3ca52d50903768c2b9bff12f55" ShortName="RESOUR~1.PRI" Size="0x988" BinaryType="UNKNOWN" Created="11/15/2013 21:51:35" Modified="11/15/2013 21:51:35" Path="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.2_neutral__mw2fte8qa7y7m" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.2_neutral__mw2fte8qa7y7m\resources.pri" LongPathHash="000086b04df4bf623d91f569709b1005ba13db2a8706" UniqueId="0xd" />
+            <File Name="Purdue Dining Courts.exe" Id="0000efb91a1c0853d581e881ee499f4fb01704bd94a0" ProductName="Purdue Dining Courts" ProductVersion="1.0.0.0" VerLanguage="0" ShortName="PURDUE~1.EXE" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0xaa00" SizeOfImage="0x10000" PeHeaderHash="0101ff2f4b12006963129d5768c7894360954e83baae" PeChecksum="0x0" PeImageType="0x14c" PeSubsystem="2" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="Purdue Dining Courts" InternalName="Purdue Dining Courts.exe" LegalCopyright="Copyright ©  2013" LinkerVersion="11.0" LinkDate="11/15/2013 21:49:51" BinaryType="DOTNETIL" Created="11/15/2013 21:51:35" Modified="11/15/2013 21:51:35" OriginalFilename="Purdue Dining Courts.exe" RunLevel="AsInvoker" UiAccess="false" Path="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.2_neutral__mw2fte8qa7y7m" RNP="0x4" DNP="0x5" LowerCaseLongPath="c:\program files\windowsapps\361393a20f51a.purduediningcourts_1.0.0.2_neutral__mw2fte8qa7y7m\purdue dining courts.exe" LongPathHash="000097beaa49fb50c6f239d14e247e15883f8fef936f" UniqueId="0xc" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000c0dc25200d6d29959c62e8798d7ace2f00000904" AnalysisVersion="1.60" DictionaryVersion="2.14" Type="Package" Id="361393A20F51A.PurdueDiningCourts_1.0.0.1_neutral__mw2fte8qa7y7m">
-      <AitFile ErrorCode="0" Name="Purdue Dining Courts.exe" Id="000090b3fd9656a13859688830fe24436d908b9b5b7e">
+    <AitStaticAnalysis ProgramId="0000500a15361f313711c8c8e142fcb5ccb000000904" AnalysisVersion="1.60" DictionaryVersion="2.14" Type="Package" Id="361393A20F51A.PurdueDiningCourts_1.0.0.2_neutral__mw2fte8qa7y7m">
+      <AitFile ErrorCode="0" Name="Purdue Dining Courts.exe" Id="0000efb91a1c0853d581e881ee499f4fb01704bd94a0">
         <AitCategory Id="ApiStatic">
           <AitFeature Name="mscoree.dll!_CorExeMain" />
         </AitCategory>
@@ -432,6 +420,7 @@
           <AitFeature Name="Windows.UI.Xaml.Controls.ListViewSelectionMode" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Page" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Page..ctor" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Page.get_Frame" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Panel" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Panel.get_Children" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation" />
@@ -439,6 +428,7 @@
           <AitFeature Name="Windows.UI.Xaml.Controls.Primitives.Selector.get_SelectedIndex" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Primitives.Selector.put_SelectedIndex" />
           <AitFeature Name="Windows.UI.Xaml.Controls.ProgressRing" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.ProgressRing.put_IsActive" />
           <AitFeature Name="Windows.UI.Xaml.Controls.StackPanel" />
           <AitFeature Name="Windows.UI.Xaml.Controls.TextBlock" />
           <AitFeature Name="Windows.UI.Xaml.Controls.TextBlock..ctor" />
@@ -452,8 +442,10 @@
           <AitFeature Name="Windows.UI.Xaml.DependencyProperty" />
           <AitFeature Name="Windows.UI.Xaml.FrameworkElement" />
           <AitFeature Name="Windows.UI.Xaml.FrameworkElement.FindName" />
+          <AitFeature Name="Windows.UI.Xaml.FrameworkElement.add_Loaded" />
           <AitFeature Name="Windows.UI.Xaml.FrameworkElement.put_Margin" />
           <AitFeature Name="Windows.UI.Xaml.FrameworkElement.put_Style" />
+          <AitFeature Name="Windows.UI.Xaml.FrameworkElement.remove_Loaded" />
           <AitFeature Name="Windows.UI.Xaml.Input.TappedEventHandler" />
           <AitFeature Name="Windows.UI.Xaml.Input.TappedEventHandler..ctor" />
           <AitFeature Name="Windows.UI.Xaml.Input.TappedRoutedEventArgs" />
@@ -466,6 +458,10 @@
           <AitFeature Name="Windows.UI.Xaml.Media.SolidColorBrush" />
           <AitFeature Name="Windows.UI.Xaml.Media.SolidColorBrush..ctor" />
           <AitFeature Name="Windows.UI.Xaml.Navigation.NavigationEventArgs" />
+          <AitFeature Name="Windows.UI.Xaml.Navigation.NavigationEventArgs.get_Parameter" />
+          <AitFeature Name="Windows.UI.Xaml.RoutedEventArgs" />
+          <AitFeature Name="Windows.UI.Xaml.RoutedEventHandler" />
+          <AitFeature Name="Windows.UI.Xaml.RoutedEventHandler..ctor" />
           <AitFeature Name="Windows.UI.Xaml.Setter" />
           <AitFeature Name="Windows.UI.Xaml.Setter..ctor" />
           <AitFeature Name="Windows.UI.Xaml.Setter.put_Property" />

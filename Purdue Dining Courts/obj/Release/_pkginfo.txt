@@ -1,1 +1,1 @@
-C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\AppPackages\PurdueDiningCourts_1.0.0.1_AnyCPU_Test\PurdueDiningCourts_1.0.0.1_AnyCPU.appx
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\AppPackages\PurdueDiningCourts_1.0.0.2_AnyCPU_Test\PurdueDiningCourts_1.0.0.2_AnyCPU.appx

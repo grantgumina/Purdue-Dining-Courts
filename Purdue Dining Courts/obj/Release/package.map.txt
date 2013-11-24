@@ -1,6 +1,7 @@
 [Files]
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\AppxManifest.xml" "AppxManifest.xml"
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\Purdue Dining Courts.exe" "Purdue Dining Courts.exe"
+"C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\LoadingLogo.png" "Assets\LoadingLogo.png"
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\Logo.png" "Assets\Logo.png"
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\SmallLogo.png" "Assets\SmallLogo.png"
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\SplashScreen.png" "Assets\SplashScreen.png"
@@ -8,5 +9,6 @@
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\Wide310x150Logo.scale-100.png" "Assets\Wide310x150Logo.scale-100.png"
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\App.xaml" "App.xaml"
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\Common\StandardStyles.xaml" "Common\StandardStyles.xaml"
+"C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\LoadingPage.xaml" "LoadingPage.xaml"
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\MainPage.xaml" "MainPage.xaml"
 "C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\resources.pri" "resources.pri"

@@ -112,7 +112,9 @@ namespace Purdue_Dining_Courts.PurdueDiningCourts_XamlTypeInfo
             }
         }
 
-        private object Activate_0_MainPage() { return new global::Purdue_Dining_Courts.MainPage(); }
+        private object Activate_0_LoadingPage() { return new global::Purdue_Dining_Courts.LoadingPage(); }
+
+        private object Activate_1_MainPage() { return new global::Purdue_Dining_Courts.MainPage(); }
 
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(string typeName)
@@ -130,9 +132,15 @@ namespace Purdue_Dining_Courts.PurdueDiningCourts_XamlTypeInfo
                 xamlType = new global::Purdue_Dining_Courts.PurdueDiningCourts_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.UserControl));
                 break;
 
+            case "Purdue_Dining_Courts.LoadingPage":
+                userType = new global::Purdue_Dining_Courts.PurdueDiningCourts_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Purdue_Dining_Courts.LoadingPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_0_LoadingPage;
+                xamlType = userType;
+                break;
+
             case "Purdue_Dining_Courts.MainPage":
                 userType = new global::Purdue_Dining_Courts.PurdueDiningCourts_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Purdue_Dining_Courts.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_1_MainPage;
                 xamlType = userType;
                 break;
 

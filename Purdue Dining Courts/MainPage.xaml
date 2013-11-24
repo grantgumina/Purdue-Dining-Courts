@@ -23,10 +23,10 @@
         <Style x:Key="MainTitleStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="42"/>
             <Setter Property="FontFamily" Value="Segoe UI"/>
-            <Setter Property="Foreground" Value="#CFB536"/>
+            <Setter Property="Foreground" Value="#FFA3792C"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Margin" Value="15,0,0,0"/>
-        </Style>
+       </Style>
         <Style x:Key="TitleProgressRingStyle" TargetType="ProgressRing">
             <Setter Property="Width" Value="40" />
             <Setter Property="Height" Value="40" />
@@ -59,7 +59,7 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                     <TextBlock Style="{StaticResource AppBarItemTitle}">Date:</TextBlock>
                     <ComboBox Width="150" Height="30" Margin="0, 0, 10, 0" x:Name="dateComboBox">
-                        <ComboBoxItem x:Name="autoDateComboBoxItem" Tapped="autoDateComboBoxItem_Tapped">Auto</ComboBoxItem>
+                        <ComboBoxItem x:Name="autoDateComboBoxItem" Tapped="autoDateComboBoxItem_Tapped">Today</ComboBoxItem>
                         <ComboBoxItem x:Name="sundayComboBoxItem" Tapped="sundayComboBoxItem_Tapped">Sunday</ComboBoxItem>
                         <ComboBoxItem x:Name="mondayComboBoxItem" Tapped="mondayComboBoxItem_Tapped">Monday</ComboBoxItem>
                         <ComboBoxItem x:Name="tuesdayComboBoxItem" Tapped="tuesdayComboBoxItem_Tapped">Tuesday</ComboBoxItem>
@@ -70,7 +70,7 @@
                     </ComboBox>
                     <TextBlock Style="{StaticResource AppBarItemTitle}">Menu:</TextBlock>
                     <ComboBox Width="150" Height="30" x:Name="menuComboBox">
-                        <ComboBoxItem x:Name="autoComboBoxItem" Tapped="autoComboBoxItem_Tapped">Auto</ComboBoxItem>
+                        <ComboBoxItem x:Name="autoComboBoxItem" Tapped="autoComboBoxItem_Tapped">Now</ComboBoxItem>
                         <ComboBoxItem x:Name="breakfastComboBoxItem" Tapped="breakfastComboBoxItem_Tapped">Breakfast</ComboBoxItem>
                         <ComboBoxItem x:Name="lunchComboBoxItem" Tapped="lunchComboBoxItem_Tapped">Lunch</ComboBoxItem>
                         <ComboBoxItem x:Name="dinnerComboBoxItem" Tapped="dinnerComboBoxItem_Tapped">Dinner</ComboBoxItem>
@@ -83,12 +83,12 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="70" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="0" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid>
                 <StackPanel Orientation="Horizontal" Background="#FFD1D3D4">
-                    <TextBlock x:Name="titleTxt" Style="{StaticResource MainTitleStyle}" Foreground="#FFA3792C" FontWeight="Normal">Purdue Dining Courts</TextBlock>
+                    <TextBlock x:Name="titleTxt" Style="{StaticResource MainTitleStyle}">Purdue Dining Courts</TextBlock>
                     <ProgressRing x:Name="appProgressRing" Style="{StaticResource TitleProgressRingStyle}" />
                 </StackPanel>
             </Grid>

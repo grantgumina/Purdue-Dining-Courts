@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="361393A20F51A.PurdueDiningCourts" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.1" />
+  <Identity Name="361393A20F51A.PurdueDiningCourts" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.2" />
   <Properties>
     <DisplayName>Purdue Dining Courts</DisplayName>
     <PublisherDisplayName>Land of Ur Apps</PublisherDisplayName>

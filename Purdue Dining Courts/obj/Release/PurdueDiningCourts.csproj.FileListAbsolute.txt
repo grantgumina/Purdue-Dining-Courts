@@ -27,3 +27,6 @@ C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\qua
 C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\qualifiers.txt.intermediate
 C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\ProjectArchitectures.txt
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\LoadingPage.g.i.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\LoadingPage.g.cs
+C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\obj\Release\LoadingPage.xaml

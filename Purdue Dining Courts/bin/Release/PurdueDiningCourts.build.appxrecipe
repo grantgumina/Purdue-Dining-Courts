@@ -17,6 +17,9 @@
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\Purdue Dining Courts.exe">
       <PackagePath>Purdue Dining Courts.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\LoadingLogo.png">
+      <PackagePath>Assets\LoadingLogo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -42,6 +45,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\LoadingPage.xaml">
+      <PackagePath>LoadingPage.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grant\my_code\Purdue-Dining-Courts\Purdue Dining Courts\bin\Release\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>

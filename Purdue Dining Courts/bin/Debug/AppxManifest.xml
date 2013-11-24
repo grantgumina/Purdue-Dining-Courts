@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="361393A20F51A.PurdueDiningCourts" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.1" ProcessorArchitecture="neutral" />
+  <Identity Name="361393A20F51A.PurdueDiningCourts" Publisher="CN=F502A88E-204F-47BF-9FB6-9D588B4EDCE4" Version="1.0.0.2" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>Purdue Dining Courts</DisplayName>
     <PublisherDisplayName>Land of Ur Apps</PublisherDisplayName>
